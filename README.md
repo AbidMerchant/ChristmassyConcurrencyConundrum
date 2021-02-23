@@ -1,5 +1,4 @@
-# ChristmassyConcurrencyConundrum
-Java Simulation of a Christmassy Concurrency Conundrum
+# Java Simulation of a Christmassy Concurrency Conundrum
 
 UCan’t plc operates a Christmas theme park “100% Lapland Style!” in a muddy field that used to
 be a roundabout on the outskirts of Preston. Here, University students are employed at minimum
