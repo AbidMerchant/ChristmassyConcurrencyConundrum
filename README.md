@@ -30,4 +30,4 @@ Once started by the elf in charge, the machine will run for a set length of time
 no longer able to direct presents into sacks because they are full, it will pause until either the timer
 has run out, or an elf changes the full sack for an empty one.
 Your task is to develop a simple Java simulation of the workings of the patent ‘PresentSorting Machine’, using Concurrency.
-Specification of Dr Krampus’ Patent Present-Sorting Mach
+Specification of Dr Krampus’ Patent Present-Sorting Machine
