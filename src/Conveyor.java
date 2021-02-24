@@ -43,7 +43,7 @@ public class Conveyor
   
 	// To check if space is available on belt
     public boolean isSpaceAvailable() {
-    	if((end%presents.length - start%presents.length) < presents.length) {
+    	if((end - start) < presents.length) {
     		return true;
     	}
     	else {
@@ -75,7 +75,6 @@ public class Conveyor
     		start = 0;
     		end = 0;
     	}
-    	
     	presents[end%presents.length] = present;
     	end++;
     }
@@ -86,8 +85,8 @@ public class Conveyor
 
 		present= presents[start%presents.length];
 		start++;
-		
-		notify(); // to notify hopper that space is available on belt now
+	
+		notifyAll(); // to notify hopper that space is available on belt now
 		
 		return present;
 	}

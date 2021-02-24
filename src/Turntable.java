@@ -3,7 +3,7 @@ import java.util.*;
 
 /**
  *
- * @author Nick
+ * @author Abid & TDG
  */
 public class Turntable extends Thread
 {
@@ -68,6 +68,7 @@ public class Turntable extends Thread
 						if(curr_belt.isPresentAvailable()) {
 							inputPort = i;
 							curr_present = curr_belt.deliverPresentToTurnTable();
+							
 							try {Thread.sleep(750);} catch (Exception e) { } // Time taken to receive the gift 
 							break;
 						}

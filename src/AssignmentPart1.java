@@ -375,7 +375,23 @@ public class AssignmentPart1
             }
             
             System.out.println(giftsInHoppers + " presents remaining in hoppers;\n" + giftsInSacks + " presents sorted into sacks.\n");
-
+            
+            // Details regarding turntables and conveyer belts
+            int beltCount = 0;
+            for (int b = 0; b < numBelts; b++)
+            {
+            	int len = belts[b].getPresents().length;
+            	beltCount += ((belts[b].end) - (belts[b].start));
+            }
+            
+            int turnCount = 0;
+            // Turn table
+            for (int t = 0; t < numTurntables; t++)
+            {
+                if(tables[t].getCurr_present() != null) turnCount++;
+            }
+            
+            System.out.println("Presents in turntable : "+turnCount+", belts : "+beltCount);
         }
         long endTime = System.currentTimeMillis();
         System.out.println("*** Input Stopped after " + (endTime - startTime) / 1000 + "s. ***");
@@ -438,11 +454,11 @@ public class AssignmentPart1
         	int len = belts[b].getPresents().length;
         	
         	System.out.println("Belt : "+b);
-        	System.out.println((belts[b].end)%len);
-        	System.out.println((belts[b].start)%len);
+        	System.out.println(belts[b].end);
+        	System.out.println(belts[b].start);
         	System.out.println("-----------");
         	
-            giftsOnMachine += ((belts[b].end)%len - (belts[b].start)%len);
+            giftsOnMachine += (belts[b].end - belts[b].start);
         }
         
         int giftsInSacks = 0;
