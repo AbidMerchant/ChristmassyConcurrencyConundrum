@@ -1,6 +1,6 @@
 /**
  *
- * @author abid & TDG
+ * @author Abid & TDG
  */
 public class Sack
 {

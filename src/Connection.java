@@ -1,6 +1,6 @@
 /**
  *
- * @author npmitchell
+ * @author TDG and Abid
  */
 public class Connection {
     ConnectionType connType;

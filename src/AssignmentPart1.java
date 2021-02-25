@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Nick
+ * @author TDG and Abid
  */
 public class AssignmentPart1
 {
@@ -46,7 +46,7 @@ public class AssignmentPart1
         
         // READ FILE
         // =========
-        String filename = "C:\\Users\\merch\\practice\\Thread_Project\\src\\scenario5.txt";
+        String filename = "E:\\eclipse\\Thread_Project\\src\\scenario5.txt";
         Scanner inputStream = null;
         
         try
@@ -388,7 +388,10 @@ public class AssignmentPart1
             // Turn table
             for (int t = 0; t < numTurntables; t++)
             {
-                if(tables[t].getCurr_present() != null) turnCount++;
+                if(tables[t].getCurr_present() != null) {
+                	System.out.println("turntable id: "+tables[t].id);
+                	turnCount++;
+                }
             }
             
             System.out.println("Presents in turntable : "+turnCount+", belts : "+beltCount);

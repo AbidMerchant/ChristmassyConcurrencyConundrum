@@ -68,7 +68,7 @@ public class Turntable extends Thread
 						if(curr_belt.isPresentAvailable()) {
 							inputPort = i;
 							curr_present = curr_belt.deliverPresentToTurnTable();
-							
+//							System.out.println(id+". Present added to table");
 							try {Thread.sleep(750);} catch (Exception e) { } // Time taken to receive the gift 
 							break;
 						}
@@ -100,8 +100,10 @@ public class Turntable extends Thread
 			else {
 				Sack output_sack = connections[outputPort].sack;
 				
-				if(output_sack.addPresent(curr_present))
+				if(output_sack.addPresent(curr_present)) {
 					curr_present = null;
+//					System.out.println(id+". Present removed from table");
+				}
 			}
 			
 			

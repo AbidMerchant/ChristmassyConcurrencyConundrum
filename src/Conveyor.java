@@ -66,7 +66,6 @@ public class Conveyor
     	
     	if(!isSpaceAvailable()) {
     		// Hopper is in wait state as not space is available on belt
-    		System.out.println("Turntable / Hopper has been entered to wait state");
     		try { wait(); } catch (Exception e) {} 
     	}
     	
@@ -85,7 +84,7 @@ public class Conveyor
 
 		present= presents[start%presents.length];
 		start++;
-	
+		
 		notifyAll(); // to notify hopper that space is available on belt now
 		
 		return present;
